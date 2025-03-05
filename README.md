@@ -3,6 +3,8 @@ Ye-Rim Lee, Dusan Paredes, Mark Skidmore, Scott Loveridge
 
 This study examines 2024 California Park Fire impact on nearby gas station prices.
 
+▶️ Check the latest version of the draft [here](Draft.pdf)
+
 ## Highlights
 -	We examine the impact of the 2024 Park Fire in California on local gasoline prices.
 -	Our analysis includes station-level gas prices, weather information, road closures, distance to the event (edge of fire or closed road) and unaffected (control) stations outside the fire area. 
