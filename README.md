@@ -4,6 +4,7 @@
 This study investigates the impact of the 2024 California Park Fire on local gasoline prices.
 
 📄 **Latest Draft:** [View Here](Draft.pdf)
+📑 **Preprint:** [View Here][https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5207948]
 
 ---
 
