@@ -1,7 +1,7 @@
 # ⛽️ Scaling Daily Web Scrapes of U.S. Gas Stations for Wildfire Impact Research
 
 ## Objective
-This project builds a daily data ingestion pipeline and custom web scraper for [GasBuddy](https://www.gasbuddy.com/), designed to monitor daily retail gasoline prices across 88,000+ U.S. stations. The scraper automatically retrieves, parses, and stores structured price data, enabling causal inference analyses of wildfire-driven market disruptions and uncovering short-term price responses and spatial heterogeneity across U.S. regions.
+This project builds a daily data ingestion pipeline and custom web scraper for [GasBuddy](https://www.gasbuddy.com/), designed to monitor daily retail gasoline prices across **88,000+ U.S. stations**. The scraper automatically retrieves, parses, and stores structured price data, enabling causal inference analyses of wildfire-driven market disruptions and uncovering short-term price responses and spatial heterogeneity across U.S. regions.
 
 ## Workflow Overview
 I use a modular, fault-tolerant scraping routine scheduled to run once per day:
