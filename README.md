@@ -118,7 +118,7 @@ Our findings contribute to the literature by demonstrating how natural disasters
 
 📄 **Latest Draft:** [Draft](Draft.pdf) [Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5207948)
 
-📌 **Keywords:** Natural Disasters, Wildfire, Retail Fuel Markets 
+📌 **Keywords:** Natural Disasters, Wildfire, Retail Fuel Markets <br>
 📚 **JEL Classifications:** Q41, Q54, R11, R32
 
 Authors: **Ye-Rim Lee**, Dusan Paredes, Mark Skidmore, Scott Loveridge <br>
