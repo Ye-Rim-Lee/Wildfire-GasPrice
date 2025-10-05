@@ -53,6 +53,52 @@ I use a modular, fault-tolerant scraping routine scheduled to run once per day:
 - `posted_time` (str): “posted x mins ago” or `N/A`
 - `collection_time` (str): UTC timestamp when captured
 
+## Minimal Example
+This example demonstrates the core function used to collect station-level retail gasoline prices from a public data source.
+The scraper sends controlled HTTP requests, handles transient errors, and parses structured data from HTML pages. <br>
+⭐ For reproducibility and ethical compliance, only the simplified logic is shared here — **please contact the author for access to the full research-grade code.**
+
+```python
+import re, time, random
+import pandas as pd, requests
+from datetime import datetime
+from bs4 import BeautifulSoup
+
+HEADERS = {"User-Agent": "Mozilla/5.0"}
+
+def process_url(zipcode: int):
+    """Fetch and parse GasBuddy station data for a given ZIP code."""
+    url = f"https://www.gasbuddy.com/home?search={zipcode:05d}&fuel=1&method=all&maxAge=0"
+    while True:
+        try:
+            res = requests.get(url, headers=HEADERS, timeout=20)
+            res.raise_for_status()
+            soup = BeautifulSoup(res.text, "html.parser")
+            break
+        except requests.exceptions.RequestException:
+            print(f"Retrying ZIP {zipcode} in 60 seconds...")
+            time.sleep(60)
+
+    # Parse station cards
+    cards = soup.find_all('div', class_=re.compile(r'StationItem'))
+    now = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
+
+    records = []
+    for c in cards:
+        sid = c.get('id')
+        price = c.find('span', class_=re.compile('Price'))
+        posted = c.find('span', class_=re.compile('Time'))
+        records.append([
+            zipcode,
+            sid,
+            price.text if price else None,
+            posted.text if posted else None,
+            now
+        ])
+    return pd.DataFrame(records, columns=["zipcode", "station_id", "price", "posted_time", "collection_time"])
+```
+
+
 ## Regarding data access:
 According to [GasBuddy’s Terms of Service](https://chatgpt.com/g/g-p-6786dbd705908191a827700a1de5e363-1-wildfire/c/68e2b1ac-22e0-8328-889b-cb7a10a8595b#:~:text=According%20to%20GasBuddy%E2%80%99s,purposes%20(Request%20%231527604).), user-submitted retail gas price data is public, as GasBuddy does not claim ownership of it. Nonetheless, we requested and received explicit permission from GasBuddy to use its data for research purposes (Request `#1527604`).
 
