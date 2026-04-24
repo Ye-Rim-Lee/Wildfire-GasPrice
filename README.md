@@ -110,16 +110,11 @@ According to [GasBuddy’s Terms of Service](https://chatgpt.com/g/g-p-6786dbd70
 - Identifies a **price decline** in the affected area during the wildfire period.
 
 ## 📑 Abstract
-As wildfires become more frequent and intense due to factors such as climate change and dry vegetation accumulation, assessing their economic impact on critical commodities is essential. This study examines the short-term effects of the 2024 Park Fire on local retail gasoline prices in Northern California using **high-frequency station-level data**. 
+Natural disasters often raise gasoline prices when they disrupt upstream fuel supply, but less is known about disasters that primarily disrupt local mobility and access. We examine the short-run effect of the 2024 Park Fire on retail gasoline prices in Northern California using high-frequency station-level data and a distance-based research design. Benchmark two-way fixed effects difference-in-differences estimates show that stations near the wildfire experienced price declines relative to more distant stations, with the largest effects concentrated within 10 miles of the fire perimeter. Because treated and control stations do not fully satisfy parallel pre-trends in the weekly panel, we use synthetic difference-in-differences as our preferred estimator. The SDID results confirm a negative local price response: gasoline prices fell by 2.5 cents per gallon for stations within 20 miles of the wildfire and by 3.9 cents for stations within 10 miles during the six weeks following fire onset. The effect attenuates as the post-treatment window expands and is concentrated among rural and unbranded stations. Taken together, the spatial, temporal, and heterogeneity patterns are more consistent with a localized contraction in gasoline demand than with a broad supply-driven fuel shock. More broadly, the results show that disaster-induced gasoline price responses depend on the dominant channel of disruption and are not uniformly upward.
 
-Applying a **generalized difference-in-differences** approach and event study analysis, we find that gas stations within **20 miles of the wildfire** experienced an average **nine-cent-per-gallon price drop** compared to more distant control stations. This outcome contrasts with the **price spikes** typically observed following hurricanes and floods. 
 
-Our findings contribute to the literature by demonstrating how natural disasters—particularly wildfires—can shape fuel market dynamics in unexpected ways. These insights emphasize the need for **post-disaster price monitoring** and market resilience strategies.
+📄 **Latest Draft:** [Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6532084), under review in Energy Economics
 
-📄 **Latest Draft:** [Draft](Draft.pdf) [Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5207948)
-
-📌 **Keywords:** Natural Disasters, Wildfire, Retail Fuel Markets <br>
-📚 **JEL Classifications:** Q41, Q54, R11, R32
 
 Authors: **Ye-Rim Lee**, Dusan Paredes, Mark Skidmore, Scott Loveridge <br>
 Contact: leeye12@msu.edu
