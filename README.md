@@ -105,9 +105,11 @@ According to [GasBuddy’s Terms of Service](https://chatgpt.com/g/g-p-6786dbd70
 ---
 
 ## 🔍 Highlights of Analysis
-- Analyzes the 2024 Park Fire in California and its effect on retail gasoline prices.
-- Incorporates station-level gas price data, weather conditions, road closures, and proximity to the fire or closed roads.
-- Identifies a **price decline** in the affected area during the wildfire period.
+-	The Park Fire reduced nearby retail gasoline prices in Northern California.
+-	The largest price declines occurred within 10 miles of the fire perimeter.
+-	The estimated effect was temporary and faded after about six weeks.
+-	Rural and unbranded stations experienced stronger negative price effects.
+-	The evidence is more consistent with lower demand than fuel shortage.
 
 ## 📑 Abstract
 Natural disasters often raise gasoline prices when they disrupt upstream fuel supply, but less is known about disasters that primarily disrupt local mobility and access. We examine the short-run effect of the 2024 Park Fire on retail gasoline prices in Northern California using high-frequency station-level data and a distance-based research design. Benchmark two-way fixed effects difference-in-differences estimates show that stations near the wildfire experienced price declines relative to more distant stations, with the largest effects concentrated within 10 miles of the fire perimeter. Because treated and control stations do not fully satisfy parallel pre-trends in the weekly panel, we use synthetic difference-in-differences as our preferred estimator. The SDID results confirm a negative local price response: gasoline prices fell by 2.5 cents per gallon for stations within 20 miles of the wildfire and by 3.9 cents for stations within 10 miles during the six weeks following fire onset. The effect attenuates as the post-treatment window expands and is concentrated among rural and unbranded stations. Taken together, the spatial, temporal, and heterogeneity patterns are more consistent with a localized contraction in gasoline demand than with a broad supply-driven fuel shock. More broadly, the results show that disaster-induced gasoline price responses depend on the dominant channel of disruption and are not uniformly upward.
